@@ -1,0 +1,41 @@
+import React from "react";
+import Cards from "./Cards";
+import list from "../../public/list.json";
+import { Link } from "react-router-dom";
+function Course() {
+  return (
+    <>
+      <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
+        <div className="mt-28 items-center justify-center text-center">
+          <h1 className="text-2xl  md:text-4xl">
+            We're delighted to have you{" "}
+            <span className="text-pink-500"> Here! :)</span>
+          </h1>
+          <p className="mt-12">
+            A Bookstore Web Application is a digital platform that enables users to explore, purchase,
+            and manage books online. The application typically features a user-friendly interface with
+            functionalities such as book browsing by categories, authors, or genres, advanced search filters, and
+            detailed book descriptions. Users can create personal accounts to manage wishlists, track orders, and leave
+            reviews or ratings for books. The application integrates a secure payment gateway to ensure smooth and safe
+            transactions. Additionally, an admin dashboard allows the management of inventory, promotions, and user feedback.
+            Modern bookstore applications often include personalized recommendations based on user preferences and reading
+            history, enhancing user engagement. With responsive
+            design, the platform ensures seamless access across devices, making it a convenient solution for book enthusiasts.
+          </p>
+          <Link to="/">
+            <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
+              Back
+            </button>
+          </Link>
+        </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
+          {list.map((item) => (
+            <Cards key={item.id} item={item} />
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Course;

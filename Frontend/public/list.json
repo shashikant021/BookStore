@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "name": "Story Book",
+        "title": " This is a bookstore website where you can find books",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 2,
+        "name": "Fruit Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 150,
+        "category": "Fruits",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 3,
+        "name": "Story Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 4,
+        "name": "Story Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 5,
+        "name": "Vegetable Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 50,
+        "category": "Vetetable",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 6,
+        "name": "Story Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 7,
+        "name": "Music Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 100,
+        "category": "Song Book",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 8,
+        "name": "Story Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 9,
+        "name": "Story Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 10,
+        "name": "Novel Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 1000,
+        "category": "Novel series",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 11,
+        "name": "Horror Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 1000,
+        "category": "Horror series",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    },
+    {
+        "id": 8,
+        "name": "Story Book",
+        "title": "This is a bookstore website where you can find books",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1732526294~exp=1732529894~hmac=104b1793e39fc0ffab88eb1c6618b8c3a673c2462ab67187a1f83901bb64a74f&w=740"
+    }
+
+]
