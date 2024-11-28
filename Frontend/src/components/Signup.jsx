@@ -38,14 +38,15 @@ function Signup() {
   }
   return (
     <>
-      <div className="flex h-screen items-center justify-center">
-        <div className=" w-[600px] ">
-          <div className="modal-box">
-            <form onSubmit={handleSubmit(onSubmit)} method="dialog">
+      <div className="flex h-screen items-center justify-center dark:bg-slate-800 dark:text-white">
+        <div className=" w-[600px]  ">
+          <div className="modal-box dark:bg-slate-700 dark:text-white">
+            <form className="dark:bg-slate-700 dark:text-white"
+            onSubmit={handleSubmit(onSubmit)} method="dialog">
               {/* if there is a button in form, it will close the modal */}
               <Link
                 to="/"
-                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 dark:bg-slate-700 dark:text-white"
               >
                 ✕
               </Link>
@@ -57,7 +58,7 @@ function Signup() {
                 <input
                   type="text"
                   placeholder="Enter your fullname"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
+                  className="w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-700 dark:text-white"
                   {...register("fullname", { required: true })}
                 />
                 <br />
@@ -74,7 +75,7 @@ function Signup() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
+                  className="w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-700 dark:text-white"
                   {...register("email", { required: true })}
                 />
                 <br />
@@ -91,7 +92,7 @@ function Signup() {
                 <input
                   type="text"
                   placeholder="Enter your password"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
+                  className="w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-700 dark:text-white"
                   {...register("password", { required: true })}
                 />
                 <br />
@@ -102,7 +103,7 @@ function Signup() {
                 )}
               </div>
               {/* Button */}
-              <div className="flex justify-around mt-4">
+              <div className="flex justify-around mt-4 ">
                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                   Signup
                 </button>
