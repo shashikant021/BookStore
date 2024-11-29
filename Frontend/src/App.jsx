@@ -3,18 +3,29 @@ import Home from "./home/Home";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Courses from "./courses/Courses";
 import Signup from "./components/Signup";
-import { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 import { useAuth } from "./context/AuthProvider";
 
 function App() {
 
-  const [authUser, setAuthUser] = useAuth()
+  const [authUser] = useAuth()
+
+  const ProtectedRoute = ({ children }) => {
+    if (!authUser) {
+      setTimeout(() => {
+        toast.error("Wait --- To access this course page, You have to Login first !");
+      }, 1000);
+      return <Navigate to="/" />;
+    }
+    return children;
+  };
+
   return (
     <>
       <div className="dark:bg-slate-800 dark:text-white">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/course" element={authUser ? <Courses /> : <Navigate to='/signup' />} />
+          <Route path="/course" element={<ProtectedRoute>  <Courses /> </ProtectedRoute>} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
         <Toaster />

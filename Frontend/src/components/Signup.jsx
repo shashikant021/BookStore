@@ -27,6 +27,9 @@ function Signup() {
         if (res.data) {
           toast.success("Signup successfully")
           navigate(from, {replace: true});
+          setTimeout(() => {
+            window.location.reload();
+          }, 1000);
         }
         localStorage.setItem('Users', JSON.stringify(res.data.user));
       }).catch((err) => {
@@ -42,7 +45,7 @@ function Signup() {
         <div className=" w-[600px]  ">
           <div className="modal-box dark:bg-slate-700 dark:text-white">
             <form className="dark:bg-slate-700 dark:text-white"
-            onSubmit={handleSubmit(onSubmit)} method="dialog">
+              onSubmit={handleSubmit(onSubmit)} method="dialog">
               {/* if there is a button in form, it will close the modal */}
               <Link
                 to="/"
@@ -107,7 +110,7 @@ function Signup() {
                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                   Signup
                 </button>
-                <p className="text-xl">
+                {/* <p className="text-xl">
                   Have account?{" "}
                   <button
                     className="underline text-blue-500 cursor-pointer"
@@ -118,7 +121,7 @@ function Signup() {
                     Login
                   </button>{" "}
                   <Login />
-                </p>
+                </p> */}
               </div>
             </form>
           </div>

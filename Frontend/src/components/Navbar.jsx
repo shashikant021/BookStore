@@ -49,9 +49,6 @@ function Navbar() {
       <li>
         <a>Contact</a>
       </li>
-      <li>
-        <a>About</a>
-      </li>
     </>
   );
   return (
@@ -87,7 +84,7 @@ function Navbar() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52 dark:bg-slate-700 dark:text-white"
               >
                 {navItems}
               </ul>
@@ -153,7 +150,7 @@ function Navbar() {
               authUser ? (<Logout />) : (
                 <div className="">
                   <a
-                    className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
+                    className="bg-black text-white  px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
                     onClick={() =>
                       document.getElementById("my_modal_3").showModal()
                     }
