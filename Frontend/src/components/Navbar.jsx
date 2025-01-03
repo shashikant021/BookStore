@@ -9,17 +9,17 @@ function Navbar() {
   const [authUser, setAuthUser] = useAuth()
 
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+    sessionStorage.getItem("theme") ? sessionStorage.getItem("theme") : "light"
   );
   const element = document.documentElement;
   useEffect(() => {
     if (theme === "dark") {
       element.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      sessionStorage.setItem("theme", "dark");
       document.body.classList.add("dark");
     } else {
       element.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      sessionStorage.setItem("theme", "light");
       document.body.classList.remove("dark");
     }
   }, [theme]);

@@ -10,7 +10,7 @@ function Logout() {
     const handleLogout = () => {
         try {
             setAuthUser({ ...authUser, user: null });
-            localStorage.removeItem('Users');
+            sessionStorage.removeItem('Users');
             toast.success("Logout Successfully")
             setTimeout(() => {
                 window.location.reload();

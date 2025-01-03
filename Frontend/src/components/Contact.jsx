@@ -28,7 +28,7 @@ function Contact() {
                         window.location.reload();
                     }, 500)
                 }
-                localStorage.setItem('success', JSON.stringify(res.data.Contact))
+                sessionStorage.setItem('success', JSON.stringify(res.data.Contact))
             }).catch((err) => {
                 if (err.response) {
                     console.log(err)

@@ -34,7 +34,7 @@ function Signup() {
             window.location.reload();
           }, 1000);
         }
-        localStorage.setItem('Users', JSON.stringify(res.data.user));
+        sessionStorage.setItem('Users', JSON.stringify(res.data.user));
       }).catch((err) => {
         if (err.response) {
           console.log(err);
