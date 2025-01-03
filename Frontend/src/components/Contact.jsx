@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 function Contact() {
 
     // const host = 'http://localhost:4001';
-    // const host = 'https://bookstorebackend-7tkf.onrender.com';
+    const host = 'https://bookstore-o02g.onrender.com';
 
     const { register, handleSubmit, formState: { errors }, } = useForm();
 
@@ -19,7 +19,7 @@ function Contact() {
             subject: data.subject,
             message: data.message
         }
-        await axios.post(`${import.meta.env.VITE_API__URL}/contact`, contactInfo)
+        await axios.post(`${host}/contact`, contactInfo)
             .then((res) => {
                 console.log(res.data);
                 if (res.data) {

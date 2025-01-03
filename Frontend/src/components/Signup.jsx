@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 function Signup() {
 
     // const host = 'http://localhost:4001';
-    // const host = 'https://bookstorebackend-7tkf.onrender.com';
+    const host = 'https://bookstore-o02g.onrender.com';
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function Signup() {
       email: data.email,
       password: data.password,
     }
-    await axios.post(`${import.meta.env.VITE_API__URL}/user/signup`, userInfo)
+    await axios.post(`${host}/user/signup`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
